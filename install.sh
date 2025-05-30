@@ -26,7 +26,7 @@ npm i -g npm@latest typescript typescript-language-server vscode-langservers-ext
 npm i -g http-server prettier @johnnymorganz/stylua-bin
 
 # neovim
-wget -O- https://github.com/neovim/neovim/releases/download/v0.11.1/nvim-linux-x86_64.tar.gz | tar xz
+wget -O- https://github.com/neovim/neovim/releases/download/v0.11.2/nvim-linux-x86_64.tar.gz | tar xz
 sudo mv nvim-linux-x86_64 /opt/nvim
 sudo ln -s /opt/nvim/bin/nvim /usr/local/bin
 
