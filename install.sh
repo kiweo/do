@@ -8,7 +8,7 @@ sudo apt-get install -y $apps $utils
 # config
 mkdir -p ~/.config/nvim && ln -s ~/do/init.lua ~/.config/nvim
 mkdir -p ~/.config/tmux && ln -s ~/do/tmux.conf ~/.config/tmux
-mkdir ~/.irssi && ln -s ~/do/config ~/.irssi
+mkdir ~/.irssi && ln -s ~/do/{config,irssi.theme} ~/.irssi
 echo 'export EDITOR="nvim"; export VISUAL="nvim"' >> ~/.bashrc
 sudo ln -s $(which fdfind) /usr/local/bin/fd
 

@@ -6,7 +6,7 @@ servers = (
     use_tls = "yes";
     tls_verify = "yes";
     autoconnect = "yes";
-  },
+  }
 );
 
 chatnets = {
@@ -22,9 +22,10 @@ chatnets = {
 };
 
 channels = (
-  { name = "#linux"; chatnet = "liberachat"; autojoin = "Yes"; },
+  { name = "#linux"; chatnet = "liberachat"; autojoin = "Yes"; }
 );
 
 settings = {
   core = { real_name = "pof"; user_name = "pof"; nick = "pof"; };
+  "fe-common/core" = { theme = "irssi.theme"; };
 };
