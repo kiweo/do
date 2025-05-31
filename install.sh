@@ -36,7 +36,7 @@ git config --global user.email "206985760+kiweo@users.noreply.github.com"
 ssh-keygen -t ed25519 -C "206985760+kiweo@users.noreply.github.com" -f ~/.ssh/id_ed25519
 
 # irc
-mkdir ~/.irssi && ln -s ~/do/{irssi.theme} ~/.irssi
+mkdir ~/.irssi && ln -s ~/do/irssi.theme ~/.irssi
 echo "alias irssi='irssi --config=<((sed \"s/PASSWORD/\$libera/g\" ~/do/config))'" >> ~/.bashrc
 read -sp "libera password? " libera
 echo "export libera='$libera'" >> ~/.bashrc
