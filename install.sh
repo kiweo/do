@@ -8,7 +8,6 @@ sudo apt-get install -y $apps $utils
 # config
 mkdir -p ~/.config/nvim && ln -s ~/do/init.lua ~/.config/nvim
 mkdir -p ~/.config/tmux && ln -s ~/do/tmux.conf ~/.config/tmux
-mkdir ~/.irssi && ln -s ~/do/{config,irssi.theme} ~/.irssi
 echo 'export EDITOR="nvim"; export VISUAL="nvim"' >> ~/.bashrc
 sudo ln -s $(which fdfind) /usr/local/bin/fd
 
@@ -35,3 +34,9 @@ sudo ln -s /opt/nvim/bin/nvim /usr/local/bin
 git config --global user.name "kiweo"
 git config --global user.email "206985760+kiweo@users.noreply.github.com"
 ssh-keygen -t ed25519 -C "206985760+kiweo@users.noreply.github.com" -f ~/.ssh/id_ed25519
+
+# irc
+mkdir ~/.irssi && ln -s ~/do/{irssi.theme} ~/.irssi
+echo "alias irssi='irssi --config=<((sed \"s/PASSWORD/\$libera/g\" ~/do/config))'" >> ~/.bashrc
+read -sp "libera password? " libera
+echo "export libera='$libera'" >> ~/.bashrc
